@@ -37,3 +37,10 @@ group :test do
   gem 'pry'
   gem 'guard-rspec', require: false
 end
+
+group :deploy do
+  gem 'capistrano',           '~> 3.4'
+  gem 'capistrano-bundler',   '~> 1.1'
+  gem 'capistrano-passenger', '~> 0.1'
+  gem 'capistrano-rbenv',     '~> 2.0'
+end
