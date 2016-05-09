@@ -3,6 +3,7 @@ lock '3.5.0'
 
 set :application, 'bandiera'
 set :repo_url, 'git@github.com:curcumalabs/bandiera.git'
+set :rbenv_ruby, '2.3.0'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -24,7 +25,7 @@ set :deploy_to, '/mnt/hosting/sites/curcuma/bandiera'
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml', '.rbenv-vars')
+set :linked_files, fetch(:linked_files, []).push('.rbenv-vars')
 
 # Default value for linked_dirs is []
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system')
