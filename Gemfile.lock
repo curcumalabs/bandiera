@@ -60,7 +60,6 @@ GEM
     hashdiff (0.3.0)
     i18n (0.7.0)
     jdbc-mysql (5.1.38)
-    jdbc-postgres (9.4.1206)
     jdbc-sqlite3 (3.8.11.2)
     json (1.8.3)
     json (1.8.3-java)
@@ -99,7 +98,6 @@ GEM
       shellany (~> 0.0)
     parser (2.3.0.6)
       ast (~> 2.2)
-    pg (0.18.4)
     poltergeist (1.9.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -209,12 +207,10 @@ DEPENDENCIES
   erubis
   guard-rspec
   jdbc-mysql
-  jdbc-postgres
   jdbc-sqlite3
   macmillan-utils
   mysql2
   newrelic_rpm
-  pg
   poltergeist
   pry
   puma
